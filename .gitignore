@@ -4,3 +4,36 @@ __pycache__/
 env_seguridad/
 *.pyc
 __pycache__/
+# ----------------------------------------------
+# 1. SEGURIDAD CRÍTICA (NUNCA SUBIR ESTO)
+# ----------------------------------------------
+# Claves, Tokens, Archivos .env, etc.
+*.key
+*.pem
+*.pfx
+.env
+.env.*
+secrets.txt
+
+# Sus claves SSH (PREVENCIÓN CONTRA EXFILTRACIÓN)
+# Esto ya está en .ssh/ pero es buena práctica cubrirlo
+id_rsa
+id_ed25519
+id_rsa.pub
+id_ed25519.pub
+
+# ----------------------------------------------
+# 2. ARCHIVOS DE ENTORNO Y CACHÉ
+# ----------------------------------------------
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+
+# Archivos de configuración de editores comunes (Visual Studio Code, etc.)
+.vscode/
+
+# Archivos de logs de terminal
+*.log
+
+# Archivos temporales
+*~
